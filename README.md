@@ -10,11 +10,13 @@ The scenario that you're currently facing is you work in an organization that is
 You're brought in to the company and team to make things more modern so the organization can not only succeed, but stay ahead of their competition. Management now understands the needs and complexity that comes with staying ahead of their competition and they know that they need to. Otherwise, the organization will fall...
 
 ## DevOps Solution
-The solution is to deploy the *TBD On App*. Currently this solution is sitting on a bunch of baremetal, but it's time to sprinkle a little DevOps on it.
+The solution is to deploy Wordpress and MySQL. Currently this solution is sitting on a bunch of baremetal, but it's time to sprinkle a little DevOps on it.
 
-![](images/uber.png)
+![](images/app.jpg)
 
 As a DevOps Engineer, you're more or less (most likely) not writing the app, but instead, deploying it. That's why you're not writing your own app in this tutorial.
+
+You can find the app [here](https://github.com/kubernetes/examples/tree/master/mysql-wordpress-pd)
 
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
