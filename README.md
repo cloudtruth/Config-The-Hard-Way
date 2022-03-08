@@ -20,13 +20,11 @@ As a DevOps Engineer, you're more or less (most likely) not writing the app, but
 You will be using the following technologies and platforms to set up a DevOps environment.
 
 1. AWS
-    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
+    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the *TBD* app is deployed properly.
 2. GitHub
     - To store the application and infrastructure/automation code
 3. Docker
-   - Create a Docker image
-   - Store the Docker image in AWS ECR
 4. Kubernetes
-   - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
+   - To run the Docker image that's created for the containerized *TBD* app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 
 ## Labs
