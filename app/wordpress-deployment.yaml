@@ -61,7 +61,7 @@ kind: Service
 metadata:
   name: wordpress
   labels:
-    app: wordpress-mysql
+    app: wordpress
 spec:
   ports:
     - port: 80
