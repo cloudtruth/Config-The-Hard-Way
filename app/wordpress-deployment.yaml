@@ -37,12 +37,12 @@ spec:
         env:
           - name: WORDPRESS_DB_HOST
             value: wordpress-mysql
+          - name: WORDPRESS_DB_USER
+            value: devopsguy
           - name: WORDPRESS_DB_PASSWORD
             value: DEVOPS1
-          # - name: WORDPRESS_DB_USER
-          #   value: wpuser
-          # - name: WORDPRESS_DB_NAME
-          #   value: wpdb
+          - name: WORDPRESS_DB_NAME
+            value: wpdb
           - name: WORDPRESS_DEBUG
             value: “1”
         ports:

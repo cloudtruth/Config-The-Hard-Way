@@ -37,12 +37,12 @@ spec:
         env:
           - name: MYSQL_ROOT_PASSWORD
             value: DEVOPS1
-          # - name: MYSQL_USER
-          #   value: wpuser
-          # - name: MYSQL_PASSWORD
-          #   value: DEVOPS12345
-          # - name: MYSQL_DATABASE
-          #   value: wpdb
+          - name: MYSQL_USER
+            value: devopsguy
+          - name: MYSQL_PASSWORD
+            value: DEVOPS1
+          - name: MYSQL_DATABASE
+            value: wpdb
         ports:
           - containerPort: 3306
             name: mysql
