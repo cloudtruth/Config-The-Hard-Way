@@ -35,10 +35,16 @@ spec:
       - image: wordpress:latest
         name: wordpress
         env:
-        - name: WORDPRESS_DB_HOST
-          value: wordpress-mysql
-        - name: WORDPRESS_DB_PASSWORD
-          value: Password12!@
+          - name: WORDPRESS_DB_HOST
+            value: wordpress-mysql
+          - name: WORDPRESS_DB_USER
+            value: wpuser
+          - name: WORDPRESS_DB_PASSWORD
+            value: DEVOPS12345
+          - name: WORDPRESS_DB_NAME
+            value: wpdb
+          - name: WORDPRESS_DEBUG
+            value: “1”
         ports:
         - containerPort: 80
           name: wordpress
