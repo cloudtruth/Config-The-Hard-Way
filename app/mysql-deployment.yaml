@@ -37,12 +37,12 @@ spec:
         env:
           - name: MYSQL_ROOT_PASSWORD
             value: DEVOPS1
-          - name: MYSQL_USER
-            value: wpuser
-          - name: MYSQL_PASSWORD
-            value: DEVOPS12345
-          - name: MYSQL_DATABASE
-            value: wpdb
+          # - name: MYSQL_USER
+          #   value: wpuser
+          # - name: MYSQL_PASSWORD
+          #   value: DEVOPS12345
+          # - name: MYSQL_DATABASE
+          #   value: wpdb
         ports:
           - containerPort: 3306
             name: mysql
@@ -59,12 +59,12 @@ kind: Service
 metadata:
   name: wordpress-mysql
   labels:
-    app: wordpress-mysql
+    app: wordpress
 spec:
   ports:
     - port: 3306
       targetPort: 3306
   selector:
     app: wordpress
-    tier: backend
-  clusterIP: None
+    tier: mysql
+  type: LoadBalancer
