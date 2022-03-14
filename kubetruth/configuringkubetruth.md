@@ -5,17 +5,7 @@ To follow along with this documentation, ensure that you have:
 
 1. Install minikube
 2. Run `minikube start`
-3. Add in the Kubernetes parameters you want CloudTruth to manage. This can be anything from secrets to Docker image names to port numbers. Example CloudTruth code is below to set your CloudTruth project and add in parameters
-
-```
-cloudtruth projects set kubernetes-secrets
-
-cloudtruth --project kubernetes-secrets parameter set --value nginx app_name
-cloudtruth --project kubernetes-secrets parameter set --value 3 replicas
-cloudtruth --project kubernetes-secrets parameter set --value 80 port
-cloudtruth --project kubernetes-secrets parameter set --value nginx image_name
-cloudtruth --project kubernetes-secrets parameter set --value latest nginx_version
-```
+3. Add in the Kubernetes parameters you want CloudTruth to manage. This can be anything from secrets to Docker image names to port numbers. You can find what parameters to add in from fourth lab, [Creating CloudTruth Parameters For The Application](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
 
 4. Create a `.yaml` file for your Kubernetes `deployment`/`configmap`/`service`/`secret`/etc.
 5. Within the `.yaml` file that you created in step 4, put in your Kubernetes manifest code. Below is an example:

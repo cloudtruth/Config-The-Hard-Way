@@ -47,10 +47,10 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
     - [AWS EKS]()
         - [prereqs](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubernetes-clusters/EKS/prereqs.md)
         - [EKS Cluster Setup](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/kubernetes-clusters/EKS)
-3. Using Kubetruth
+3. Creating A CloudTruth Project
+   - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
+4. Creating CloudTruth Parameters For The Application
+   - [Create Parameters For Wordpress Deployment](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
+5. Using Kubetruth
    - [What Is Kubetruth?](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubetruth/whatiskubetruth.md)
    - [Configuring Kubetruth](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubetruth/configuringkubetruth.md)
-4. Creating A CloudTruth Project
-   - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
-5. Creating CloudTruth Parameters For The Application
-   - [Create Parameters For Wordpress Deployment](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
