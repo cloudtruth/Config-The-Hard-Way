@@ -31,3 +31,10 @@ You will be using the following technologies and platforms to set up a DevOps en
 
 ## Labs
 1. [Prerequisites](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/prerequisites.md)
+2. Setting Up A Kubernetes Cluster
+3. Using Kubetruth
+   - [What Is Kubetruth?]()
+   - [Configuring Kubetruth]()
+4. Creating A CloudTruth Project
+   - 
+5. Creating CloudTruth Parameters
