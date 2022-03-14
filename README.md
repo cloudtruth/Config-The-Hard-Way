@@ -33,12 +33,21 @@ You will be using the following technologies and platforms to set up a DevOps en
    - To run the Docker image that's created for the containerized Wordpress app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 
 ## Labs
+
+These labs are a Work In Progress (WIP). If a link is missing or not working, that means the code is actively being worked on.
+
 1. [Prerequisites](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/prerequisites.md)
-2. Setting Up A Kubernetes Cluster
+2. Setting Up A Kubernetes Cluster With Terraform
+    - [Google GKE]()
+        - [prereqs]()
+    - [Azure AKS]()
+        - [prereqs]()
+    - [AWS EKS]()
+        - [prereqs]()
 3. Using Kubetruth
    - [What Is Kubetruth?]()
    - [Configuring Kubetruth]()
 4. Creating A CloudTruth Project
    - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
-5. Creating CloudTruth Parameters
-   - [Create Parameters For Wordpress Deployment]()
+5. Creating CloudTruth Parameters For The Application
+   - [Create Parameters For Wordpress Deployment](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
