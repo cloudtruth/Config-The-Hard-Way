@@ -13,12 +13,12 @@ Breaking down the commands below:
 - `--value`: First specifies the value, then the name. It's a `value/key` pair. For example, the first command specifies the `value` as `wordpress-mysql` and the parameter name/key as `appname`.
 
 ```
-cloudtruth --project wordpress parameter set --value wordpress-mysql appname
-cloudtruth --project wordpress parameter set --value mysql storagename
-cloudtruth --project wordpress parameter set --value DEVOPS1 MYSQL_ROOT_PASSWORD
-cloudtruth --project wordpress parameter set --value devopsguy MYSQL_USER
-cloudtruth --project wordpress parameter set --value DEVOPS1 MYSQL_PASSWORD
-cloudtruth --project wordpress parameter set --value wpdb MYSQL_DATABASE
-cloudtruth --project wordpress parameter set --value mysql image_name
-cloudtruth --project wordpress parameter set --value 8.0 mysql_version
+cloudtruth --project kubernetes parameter set --value wordpress-mysql appname
+cloudtruth --project kubernetes parameter set --value mysql storagename
+cloudtruth --project kubernetes parameter set --value DEVOPS1 MYSQL_ROOT_PASSWORD
+cloudtruth --project kubernetes parameter set --value devopsguy MYSQL_USER
+cloudtruth --project kubernetes parameter set --value DEVOPS1 MYSQL_PASSWORD
+cloudtruth --project kubernetes parameter set --value wpdb MYSQL_DATABASE
+cloudtruth --project kubernetes parameter set --value mysql image_name
+cloudtruth --project kubernetes parameter set --value 8.0 mysql_version
 ```
