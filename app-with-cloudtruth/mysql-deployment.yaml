@@ -4,7 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: {{ storagename ~ "-pv-claim" }}
   labels:
-    app: wordpress-mysql
+    app: {{appname}}
 spec:
   accessModes:
     - ReadWriteOnce
@@ -15,34 +15,34 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wordpress-mysql
+  name: {{appname}}
   labels:
-    app: wordpress-mysql
+    app: {{appname}}
 spec:
   selector:
     matchLabels:
-      app: wordpress-mysql
+      app: {{appname}}
       tier: mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: wordpress-mysql
+        app: {{appname}}
         tier: mysql
     spec:
       containers:
-      - image: mysql:8.0
+      - image: {{image_name}}:{{mysql_version}}
         name: mysql
         env:
           - name: MYSQL_ROOT_PASSWORD
-            value: DEVOPS1
+            value: {{MYSQL_ROOT_PASSWORD}}
           - name: MYSQL_USER
-            value: devopsguy
+            value: {{MYSQL_USER}}
           - name: MYSQL_PASSWORD
-            value: DEVOPS1
+            value: {{MYSQL_PASSWORD}}
           - name: MYSQL_DATABASE
-            value: wpdb
+            value: {{MYSQL_DATABASE}}
         ports:
           - containerPort: 3306
             name: mysql
@@ -57,12 +57,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: wordpress-mysql
+  name: {{appname}}
 spec:
   ports:
     - port: 3306
       targetPort: 3306
   selector:
-    app: wordpress-mysql
+    app: {{appname}}
     tier: mysql
   type: LoadBalancer
