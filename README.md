@@ -36,5 +36,5 @@ You will be using the following technologies and platforms to set up a DevOps en
    - [What Is Kubetruth?]()
    - [Configuring Kubetruth]()
 4. Creating A CloudTruth Project
-   - [Create A New Project]()
+   - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
 5. Creating CloudTruth Parameters
