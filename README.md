@@ -30,4 +30,4 @@ You will be using the following technologies and platforms to set up a DevOps en
    - To run the Docker image that's created for the containerized *TBD* app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 
 ## Labs
-1. [Prerequisites]()
+1. [Prerequisites](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/prerequisites.md)
