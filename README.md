@@ -40,13 +40,13 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
 2. Setting Up A Kubernetes Cluster With Terraform
     - [Google GKE]()
         - [prereqs](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubernetes-clusters/GKE/prereqs.md)
-        - [GKE Cluster Setup]()
+        - [GKE Cluster Setup](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/kubernetes-clusters/EKS)
     - [Azure AKS]()
         - [prereqs](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubernetes-clusters/AKS/prereqs.md)
-        - [AKS Cluster Setup]()
+        - [AKS Cluster Setup](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/kubernetes-clusters/AKS)
     - [AWS EKS]()
         - [prereqs](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubernetes-clusters/EKS/prereqs.md)
-        - [EKS Cluster Setup]()
+        - [EKS Cluster Setup](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/kubernetes-clusters/EKS)
 3. Using Kubetruth
    - [What Is Kubetruth?]()
    - [Configuring Kubetruth]()
