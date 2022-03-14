@@ -4,7 +4,7 @@
 
 ![](images/1.png)
 
-2. Click the blue `Add a project` button
+2. Click the blue `Add Project` button
 
 ![](images/2.png)
 
