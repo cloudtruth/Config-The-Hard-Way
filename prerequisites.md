@@ -23,4 +23,4 @@ You'll have to prompts:
 - The first will ask if you want to save the API key profile as the default. You can choose `y`
 - The second will ask if you want to bring up the CloudTruth API portal where you can generate a new API token. Choose `y`
 
-![signup](images/signup.png)
+![signup](images/signup1.png)
