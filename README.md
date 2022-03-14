@@ -21,13 +21,16 @@ You can find the app [here](https://github.com/kubernetes/examples/tree/master/m
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
 
-1. AWS
-    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the *TBD* app is deployed properly.
-2. GitHub
+1. CloudTruth
+    - Used to store all secrets, parameters, and environment variables. Any configuration data that you need stored in one location, CloudTruth has you covered.
+2. AWS
+    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Wordpress app is deployed properly.
+3. GitHub
     - To store the application and infrastructure/automation code
-3. Docker
-4. Kubernetes
-   - To run the Docker image that's created for the containerized *TBD* app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
+4. Docker
+    - Although you won't be doing anything directly with Docker, Docker is used to build the containers that run in Kubernetes Pods.
+5. Kubernetes
+   - To run the Docker image that's created for the containerized Wordpress app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 
 ## Labs
 1. [Prerequisites](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/prerequisites.md)
@@ -38,3 +41,4 @@ You will be using the following technologies and platforms to set up a DevOps en
 4. Creating A CloudTruth Project
    - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
 5. Creating CloudTruth Parameters
+   - [Create Parameters For Wordpress Deployment]()
