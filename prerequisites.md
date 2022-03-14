@@ -14,7 +14,9 @@ You can sign up for CloudTruth for personal use for absolutely free.
 
 ## CloudTruth CLI
 
-Regardless of what operating system you're on, installing the CloudTruth CLI is ridiculously easy. Take a look at the documentation [here](https://docs.cloudtruth.com/configuration-management/cli-and-api/cloudtruth-cli) for any OS and in just a minute or two, you'll have it installed
+Regardless of what operating system you're on, installing the CloudTruth CLI is ridiculously easy.
+
+Take a look at the documentation [here](https://docs.cloudtruth.com/configuration-management/cli-and-api/cloudtruth-cli) for any OS and in just a minute or two, you'll have it installed
 
 ## Login
 
