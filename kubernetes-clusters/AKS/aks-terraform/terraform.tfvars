@@ -1,0 +1,5 @@
+location = "eastus"
+cluster_name = "cloudtruthaks92"
+resource_group = ""
+client_id = ""
+client_secret = ""
