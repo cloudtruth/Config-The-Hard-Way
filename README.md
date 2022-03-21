@@ -49,6 +49,9 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
         - [EKS Cluster Setup](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/kubernetes-clusters/EKS)
 3. Creating A CloudTruth Project
    - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
+4. Using And Not Using CloudTruth
+   - [With CloudTruth]()
+   - [Without CloudTruth]()
 4. Creating CloudTruth Parameters For The Application
    - [Why Use CloudTruth Parameters?](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/whyparams.md)
    - [Create Parameters For Wordpress Deployment](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
