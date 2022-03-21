@@ -18,3 +18,5 @@ When you have a bunch of different configuration data, especially for hybrid-clo
 
 ## Why CloudTruth
 CloudTruth makes managing configuration data simple. One UI and one API to manage any piece of configuration data, all under one roof.
+
+Whether you have applications or infrastructure in AWS, Azure, GCP, or even on-prem, you can utilize CloudTruth to store the configuration data and have it easily available to be retreived at ANY point for ANY environment.
