@@ -23,14 +23,14 @@ You will be using the following technologies and platforms to set up a DevOps en
 
 1. CloudTruth
     - Used to store all secrets, parameters, and environment variables. Any configuration data that you need stored in one location, CloudTruth has you covered.
-2. AWS
-    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Wordpress app is deployed properly.
+2. AWS/Azure/GCP
+    - The application will be hosted on Kubernetes. Regardless of if you use GCP, Azure, or AWS, you'll be able to follow along with this project. Below under the labs, you'll see secrets set up for GKE, AKS, or EKS.
 3. GitHub
     - To store the application and infrastructure/automation code
 4. Docker
     - Although you won't be doing anything directly with Docker, Docker is used to build the containers that run in Kubernetes Pods.
 5. Kubernetes
-   - To run the Docker image that's created for the containerized Wordpress app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
+   - To run the Docker image that's created for the containerized Wordpress app. Kubernetes, in this case EKS, AKS, or GKE will be used to orchestrate the container.
 
 ## Labs
 
