@@ -38,3 +38,5 @@ Here's the other reality; if you're using Kubernetes, chances are you don't want
 That's extremely cumbersome.
 
 Instead of going through all of that, you can use CloudTruth to store configuration data. You can also retrieve configuration data via CloudTruth for any environment on any Kubernetes cluster.
+
+Take a look at the [With CloudTruth](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-with-cloudtruth/withct.md) section to learn how CloudTruth solves this problem.
