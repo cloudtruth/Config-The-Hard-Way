@@ -58,3 +58,4 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
 5. Using Kubetruth
    - [What Is Kubetruth?](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubetruth/whatiskubetruth.md)
    - [Configuring Kubetruth](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubetruth/configuringkubetruth.md)
+6. Deploying The Application
