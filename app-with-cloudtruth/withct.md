@@ -23,4 +23,6 @@ Notice how the Parameter names are in a Jinja2-like syntax. The values inside of
 
 ![](../images/params.png)
 
-With CloudTruth, you can save the parameters like you see in the screenshot above and can pull the configuration data values from CloudTruth to your Kubernetes Manifest(s).
+With CloudTruth, you can save the parameters like you see in the screenshot above and can pull the configuration data values (the parameter values) from CloudTruth to your Kubernetes Manifest(s).
+
+It doesn't matter if you're in AWS, Azure, GCP, on-prem, or in a hybrid-cloud environment; you can pull any parameter value from CloudTruth.
