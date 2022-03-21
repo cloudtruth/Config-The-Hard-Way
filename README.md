@@ -50,6 +50,7 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
 3. Creating A CloudTruth Project
    - [Create A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
 4. Creating CloudTruth Parameters For The Application
+   - [Why Use CloudTruth Parameters?]()
    - [Create Parameters For Wordpress Deployment](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
 5. Using Kubetruth
    - [What Is Kubetruth?](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubetruth/whatiskubetruth.md)
