@@ -38,6 +38,7 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
 
 1. [Prerequisites](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/prerequisites.md)
 2. Setting Up A Kubernetes Cluster With Terraform
+    - [Using Terraform and CloudTruth]()
     - [Google GKE]()
         - [prereqs](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/kubernetes-clusters/GKE/prereqs.md)
         - [GKE Cluster Setup](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/kubernetes-clusters/GKE/gke-terraform)
