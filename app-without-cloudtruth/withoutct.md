@@ -6,7 +6,7 @@ That's what CloudTruth is doing for configuration data.
 
 Let's take a look at an example without using CloudTruth.
 
-From the code founde [here](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-without-cloudtruth/wordpress-deployment.yaml), you can see that there's a container spec (the app that's going inside of the Kuberentes pod) for Wordpress.
+From the code founde [here](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/app-without-cloudtruth/nosecrets), you can see that there's a container spec (the app that's going inside of the Kuberentes pod) for Wordpress.
 
 ```
       containers:
