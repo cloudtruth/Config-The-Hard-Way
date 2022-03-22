@@ -1,46 +1,21 @@
 ## Prerequisites
 To follow along with this documentation, ensure that you have:
-- A project called `kubernetes-secrets`. You can change the project name, but just ensure that you change the project name to reflect your project name on step 7.
+- Finished the creation of your CloudTruth project from Lab 3 [Creating A New Project](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/project/readme.md)
 - Access to create an API key for CloudTruth
+- Either an AKS, EKS, or GKE cluster from Lab 2.
 
-1. Install minikube
-2. Run `minikube start`
-3. Add in the Kubernetes parameters you want CloudTruth to manage. This can be anything from secrets to Docker image names to port numbers. You can find what parameters to add in from fourth lab, [Creating CloudTruth Parameters For The Application](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
+## The Setup
 
-4. Create a `.yaml` file for your Kubernetes `deployment`/`configmap`/`service`/`secret`/etc.
-5. Within the `.yaml` file that you created in step 4, put in your Kubernetes manifest code. Below is an example:
+1. Add in the Kubernetes parameters you want CloudTruth to manage. This can be anything from secrets to Docker image names to port numbers. You can find what parameters to add in from fifth lab, [Creating CloudTruth Parameters For The Application](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
 
+2. Open the `app-with-cloudtruth` directory on your terminal
+3. Run the following commands to let CloudTruth know which exact Kubernetes manifests to use and to store the template inside of CloudTruth. The `--project` is `wordpress` because that's the project that we created in Lab 3.
 ```
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: {{app_name}}
-  namespace: ctdeploytest
-  labels:
-    app: {{app_name}}
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: {{app_name}}
-  template:
-    metadata:
-      labels:
-        app: {{app_name}}
-    spec:
-      containers:
-        - name: {{image_name}}
-          image: {{image_name}}:{{image_version}}
-          ports:
-            - containerPort: {{app_port}}
+cloudtruth --project 'wordpress' template set --body wordpress-deployment.yaml deploymentwordpress
+cloudtruth --project 'wordpress' template set --body mysql-deployment.yaml deploymentmysql
 ```
 
-Notice how there are double brackets with keys. Those keys are the names of the parameters in your CloudTruth environment.
-
-6. Run the following command to let CloudTruth know which exact Kubernetes manifest to look at and to store the template inside of CloudTruth
-```
-cloudtruth --project 'kubernetes-secrets' template set --body some_file_name.yaml deployment
-```
+![](../images/templates.png)
 
 The `deployment` at the end of the command in step 7 indicates that we're running a Kubernetes `deployment`. If it was, for example, a Kubernetes `service`, the command would say `service` at the end instead of `deployment`.
 
