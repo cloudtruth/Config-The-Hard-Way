@@ -1,0 +1,27 @@
+rbac:
+  additionalRoleRules:
+    - apiGroups: ["", "extensions", "apps"]
+      resources: ["deployments", "replicasets", "pods", "services"]
+      verbs: ["*"]
+
+# Kubetruth is configured using a CustomResourceDefinition called
+# ProjectMapping, which allows one to specify how the operator
+# transforms the data from your CloudTruth projects into kuberenetes
+# resources
+projectMappings:
+
+  # Define the root project mapping, skipping all projects except for the
+  # example we care about
+  root:
+    scope: "root"
+    environment: default
+    skip: true
+
+  # Define an override ProjectMapping to enable deployment of CloudTruth projects named k8s*
+  k8s-deploy:
+    scope: "override"
+    skip: false
+    project_selector: "wordpress"
+    resource_templates:
+      deployment: '{% if templates.names contains "deployment" %}{{ templates.deployment }}{% endif %}'
+      service: '{% if templates.names contains "service" %}{{ templates.service }}{% endif %}'

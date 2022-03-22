@@ -11,8 +11,8 @@ To follow along with this documentation, ensure that you have:
 2. Open the `app-with-cloudtruth` directory on your terminal
 3. Run the following commands to let CloudTruth know which exact Kubernetes manifests to use and to store the template inside of CloudTruth. The `--project` is `wordpress` because that's the project that we created in Lab 3.
 ```
-cloudtruth --project 'wordpress' template set --body wordpress-deployment.yaml deploymentwordpress
-cloudtruth --project 'wordpress' template set --body mysql-deployment.yaml deploymentmysql
+cloudtruth --project 'wordpress' template set --body wordpress-deployment.yaml deployment
+cloudtruth --project 'wordpress' template set --body mysql-deployment.yaml deployment
 ```
 
 ![](../images/templates.png)
@@ -71,3 +71,9 @@ Another option is to run the Helm Chart in a specific namespace. That way, it's 
 helm repo add cloudtruth https://packages.cloudtruth.com/charts/
 helm install --create-namespace --namespace ctdeploytest --values ctdeploytest-values.yaml --set appSettings.apiKey=$CLOUDTRUTH_API_KEY kubetruth cloudtruth/kubetruth
 ```
+
+If you run `kubectl logs pod_name` (the pod name of Kubetruth), you'll see the following output which shows that Kubetruth selected the proper `wordpress` project
+
+![](../images/logs.png)
+
+After KubeTruth is deployed, you'll see that not only the Kubetruth deployment is created, but the Wordpress and MySQL deployments are created as well.
