@@ -1,8 +1,8 @@
 ## The Code
 
-Some secrets are better than none. In the previous lab found [here](), you saw how plain-text secrets would look in a Kubernetes manifest. You literally NEVER want to put secrets as plain-text in any code, and you definitely don't want to commit it to source control.
+Some secrets are better than none. In the previous lab found [here](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-without-cloudtruth/nosecrets/withoutct.md), you saw how plain-text secrets would look in a Kubernetes manifest. You literally NEVER want to put secrets as plain-text in any code, and you definitely don't want to commit it to source control.
 
-Using the code [here](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/app-without-cloudtruth/kubernetes-secrets)
+Using the code [here](https://github.com/cloudtruth/Config-The-Hard-Way/tree/main/app-without-cloudtruth/kubernetes-secrets), you'll create Kubernetes Secrets for an environment
 
 ## Creating Secrets
 
