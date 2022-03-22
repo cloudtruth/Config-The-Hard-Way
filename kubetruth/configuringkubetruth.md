@@ -17,11 +17,12 @@ cloudtruth --project 'wordpress' template set --body mysql-deployment.yaml deplo
 
 ![](../images/templates.png)
 
-The `deployment` at the end of the command in step 7 indicates that we're running a Kubernetes `deployment`. If it was, for example, a Kubernetes `service`, the command would say `service` at the end instead of `deployment`.
+The `deployment` at the end of the command in step 7 indicates what type of template it is. If it was, for example, a Kubernetes `service`, the command would say `service` at the end instead of `deployment`.
 
-Or just use the Nginx deployment found under the `nginx-sample` directory
+4. Configure the operator configuration.
 
-7. Configure the operator configuration. Create a new file called `ctdeploytest-values.yaml` and add the following into it.
+Create a new file called `ctdeploytest-values.yaml` in the `app-with-cloudtruth` directory and add the following into it.
+
 ```
 # Applying deployment resources requires additional permissions
 rbac:
@@ -47,15 +48,17 @@ projectMappings:
   k8s-deploy:
     scope: "override"
     skip: false
-    project_selector: "^k8s-"
+    project_selector: "wordpress"
     resource_templates:
       deployment: '{% if templates.names contains "deployment" %}{{ templates.deployment }}{% endif %}'
       service: '{% if templates.names contains "service" %}{{ templates.service }}{% endif %}'
 ```
 
-Ensure that the `ctdeploytest-values.yaml` file is saved in the same location that your file containing the Kubernetes deployment is located.
+**Notice on line 51, the `project_selector` is `wordpress`. That parameter indicates which project we're pointing to**
 
-8. Install and run KubeTruth, the Kubernetes operator (A Kubernetes operator is a method of packaging, deploying, and managing a Kubernetes application)
+8. Install and run KubeTruth, which is the Kubernetes operator.
+
+The Kubernetes operator is a method of packaging, deploying, and managing a Kubernetes applications
 
 ```
 helm repo add cloudtruth https://packages.cloudtruth.com/charts/
