@@ -43,7 +43,7 @@ Click the blue `Create project` button
 
 ## Kubernetes Projects
 
-In this section, we'll do the same thing that we need in the **Terraform Projects** section and create a child project.
+In this section, we'll do the same thing that we need in the **Terraform Projects** section, except we'll create two child projects
 
 1. Log into your CloudTruth portal and click on the `Projects` button
 
@@ -53,12 +53,16 @@ In this section, we'll do the same thing that we need in the **Terraform Project
 
 ![](images/2.png)
 
-3. Name your child project `Kubernetes` and ensure to select the `Wordpress` parent project.
+3. Name your child project `wordpress-app` and ensure to select the `wordpress` parent project.
 
 ![](images/5.png)
+
+4. Create another child project and call it `mysql-app` and ensure to select the `wordpress` parent project
+
+![](images/6.png)
 
 ## End Result
 
 Now that you have a parent project and two child projects, you should see the project hierchy similiar to the screenshot below.
 
-![](images/6.png)
+![](images/7.png)
