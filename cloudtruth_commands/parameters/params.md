@@ -12,13 +12,22 @@ Breaking down the commands below:
 - `parameter set`: Calls the `parameter` command with the `set` switch to create new parameters
 - `--value`: First specifies the value, then the name. It's a `value/key` pair. For example, the first command specifies the `value` as `wordpress-mysql` and the parameter name/key as `appname`.
 
+Below you'll see two sets of parameters. The first is for the wordpress deployment and the second is for the MySQL deployment
+
 ```
-cloudtruth --project kubernetes parameter set --value wordpress-mysql appname
-cloudtruth --project kubernetes parameter set --value mysql storagename
-cloudtruth --project kubernetes parameter set --value DEVOPS1 MYSQL_ROOT_PASSWORD
-cloudtruth --project kubernetes parameter set --value devopsguy MYSQL_USER
-cloudtruth --project kubernetes parameter set --value DEVOPS1 MYSQL_PASSWORD
-cloudtruth --project kubernetes parameter set --value wpdb MYSQL_DATABASE
-cloudtruth --project kubernetes parameter set --value mysql image_name
-cloudtruth --project kubernetes parameter set --value 8.0 mysql_version
+cloudtruth --project wordpress-app parameter set --value devopsguy MYSQL_USER
+cloudtruth --project wordpress-app parameter set --value DEVOPS1 MYSQL_PASSWORD
+cloudtruth --project wordpress-app parameter set --value wpdb MYSQL_DATABASE
+cloudtruth --project wordpress-app parameter set --value wordpress-mysql appname
+```
+
+```
+cloudtruth --project mysql-app parameter set --value wordpress-mysql appname
+cloudtruth --project mysql-app parameter set --value mysql-pv-claim storagename
+cloudtruth --project mysql-app parameter set --value DEVOPS1 MYSQL_ROOT_PASSWORD
+cloudtruth --project mysql-app parameter set --value devopsguy MYSQL_USER
+cloudtruth --project mysql-app parameter set --value DEVOPS1 MYSQL_PASSWORD
+cloudtruth --project mysql-app parameter set --value wpdb MYSQL_DATABASE
+cloudtruth --project mysql-app parameter set --value mysql image_name
+cloudtruth --project mysql-app parameter set --value 8.0 mysql_version
 ```
