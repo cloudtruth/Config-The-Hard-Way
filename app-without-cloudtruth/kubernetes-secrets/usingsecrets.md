@@ -101,7 +101,11 @@ Via MySQL Kubernetes Manifest
                 key: MYSQL_DATABASE
 ```
 
+Although the secrets are encrypted when the application receives them, you still have to store the Secrets Kubernetes manifest somewhere, and the Secrets are in plain-text.
+
 ## The Problem
+
+By default, using Opaque, the secrets are stored in an unencrypted fashion using the API Servers etcd
 
 - Secrets aren't encrypted at rest
 - Secrets aren't encrypted by default
