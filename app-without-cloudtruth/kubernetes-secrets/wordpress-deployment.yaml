@@ -38,11 +38,20 @@ spec:
           - name: WORDPRESS_DB_HOST
             value: wordpress-mysql
           - name: WORDPRESS_DB_USER
-            value: devopsguy
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: wordpressapp
           - name: WORDPRESS_DB_PASSWORD
-            value: DEVOPS1
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: MYSQL_PASSWORD
           - name: WORDPRESS_DB_NAME
-            value: wpdb
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: MYSQL_DATABASE
           - name: WORDPRESS_DEBUG
             value: “1”
         ports:

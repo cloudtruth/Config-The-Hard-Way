@@ -36,13 +36,25 @@ spec:
         name: mysql
         env:
           - name: MYSQL_ROOT_PASSWORD
-            value: DEVOPS1
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: MYSQL_ROOT_PASSWORD
           - name: MYSQL_USER
-            value: devopsguy
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: MYSQL_USER
           - name: MYSQL_PASSWORD
-            value: DEVOPS1
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: MYSQL_PASSWORD
           - name: MYSQL_DATABASE
-            value: wpdb
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: MYSQL_DATABASE
         ports:
           - containerPort: 3306
             name: mysql
