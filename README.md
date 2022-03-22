@@ -53,7 +53,7 @@ These labs are a Work In Progress (WIP). If a link is missing or not working, th
 4. Using And Not Using CloudTruth
    - Without CloudTruth:
        - [Without Secrets At All](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-without-cloudtruth/withoutct.md)
-       - [Kubernetes Secrets](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-without-cloudtruth/usingsecrets.md)
+       - [Kubernetes Secrets](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-without-cloudtruth/kubernetes-secrets/usingsecrets.md)
    - [With CloudTruth](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/app-with-cloudtruth/withct.md)
 4. Creating CloudTruth Parameters For The Application
    - [Why Use CloudTruth Parameters?](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/whyparams.md)
