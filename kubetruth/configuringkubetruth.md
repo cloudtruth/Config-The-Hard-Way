@@ -48,7 +48,7 @@ projectMappings:
   k8s-deploy:
     scope: "override"
     skip: false
-    project_selector: "wordpress"
+    project_selector: "wordpress-app|mysql-app"
     resource_templates:
       deployment: '{% if templates.names contains "deployment" %}{{ templates.deployment }}{% endif %}'
       service: '{% if templates.names contains "service" %}{{ templates.service }}{% endif %}'
