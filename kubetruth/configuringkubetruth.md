@@ -9,10 +9,10 @@ To follow along with this documentation, ensure that you have:
 1. Add in the Kubernetes parameters you want CloudTruth to manage. This can be anything from secrets to Docker image names to port numbers. You can find what parameters to add in from fifth lab, [Creating CloudTruth Parameters For The Application](https://github.com/cloudtruth/Config-The-Hard-Way/blob/main/cloudtruth_commands/parameters/params.md)
 
 2. Open the `app-with-cloudtruth` directory on your terminal
-3. Run the following commands to let CloudTruth know which exact Kubernetes manifests to use and to store the template inside of CloudTruth. The `--project` is `wordpress` because that's the project that we created in Lab 3.
+3. Run the following commands to let CloudTruth know which exact Kubernetes manifests to use and to store the template inside of CloudTruth. The `--project` is `wordpress-app` for the first command and `mysql-app` for the second command because those are the projects we created in Lab 3.
 ```
-cloudtruth --project 'wordpress' template set --body wordpress-deployment.yaml deployment
-cloudtruth --project 'wordpress' template set --body mysql-deployment.yaml deployment
+cloudtruth --project 'wordpress-app' template set --body wordpress-deployment.yaml deployment
+cloudtruth --project 'mysql-app' template set --body mysql-deployment.yaml deployment
 ```
 
 ![](../images/templates.png)
