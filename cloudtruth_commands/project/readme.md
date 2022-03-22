@@ -43,7 +43,9 @@ Click the blue `Create project` button
 
 ## Kubernetes Projects
 
-In this section, we'll do the same thing that we need in the **Terraform Projects** section, except we'll create two child projects
+In this section, we'll do the same thing that we need in the **Terraform Projects** section, except we'll create two child projects.
+
+The reason why is because later in the labs when we create the Kubernetes manifests for `mysql` and `wordpress`, we'll need to store the Kubernetes manifests as Templates in CloudTruth. To store the Templates, we'll need one Deployment spec (the Kubernetes manifest) per project.
 
 1. Log into your CloudTruth portal and click on the `Projects` button
 
