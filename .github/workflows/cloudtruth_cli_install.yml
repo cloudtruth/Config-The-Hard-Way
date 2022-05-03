@@ -21,7 +21,7 @@ jobs:
         run:  export CLOUDTRUTH_API_KEY=${{ secrets.API_KEY }}
         
       - name: Set API Key
-        run:  cloudtruth --api-key ${{ secrets.API_KEY }}
+        run:  cloudtruth --api-key=$CLOUDTRUTH_API_KEY
         
       - name: List Projects To Confirm Installation
         run:  cloudtruth project list
