@@ -17,7 +17,7 @@ jobs:
           sudo dpkg -i cloudtruth_${CLOUDTRUTH_CLI_VERSION}_amd64.deb
         
       - name: Set API Key
-        run:  cloudtruth --api-key=${{ secrets.API_KEY }}
+        run:  cloudtruth --api-key ${{ secrets.API_KEY }}
         
       - name: List Projects To Confirm Installation
         run:  cloudtruth project list
