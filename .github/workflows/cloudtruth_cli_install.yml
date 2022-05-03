@@ -16,8 +16,5 @@ jobs:
           curl -sLOJ https://github.com/cloudtruth/cloudtruth-cli/releases/download/${CLOUDTRUTH_CLI_VERSION}/cloudtruth_${CLOUDTRUTH_CLI_VERSION}_amd64.deb
           sudo dpkg -i cloudtruth_${CLOUDTRUTH_CLI_VERSION}_amd64.deb
         
-      - name: Set API Key
-        run:  cloudtruth --api-key ${{ secrets.API_KEY }}
-        
-      - name: List Projects To Confirm Installation
-        run:  cloudtruth project list
+      - name: Set API Key and list projects
+        run:  cloudtruth --api-key ${{ secrets.API_KEY }} projects list
